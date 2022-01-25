@@ -1,0 +1,24 @@
+{
+  "name": "cambly-calendar-sync",
+  "version": "1.0.0",
+  "description": "Allow you to sync your Cambly reservations with your device's calendar",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hattapoglu/cambly-calendar-sync.git"
+  },
+  "author": "Omer Hattapoglu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hattapoglu/cambly-calendar-sync/issues"
+  },
+  "homepage": "https://github.com/hattapoglu/cambly-calendar-sync#readme",
+  "dependencies": {
+    "ics": "^2.35.0",
+    "node-fetch": "^3.2.0"
+  }
+}

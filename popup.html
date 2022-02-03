@@ -2,15 +2,20 @@
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="popup.js" type="module"></script>
 </head>
 
 <body>
-  <form id="control-row">
-    <button id="reservation">Get Reservation Info</button>
-    <ul id="reservations"></ul>
-  </form>
+  <button id="get">Get Reservations</button>
+  <div id="reservation">
+    <ul id="list">
+    </ul>
+    <a id="download" download="cambly_calendar.ics">Download Reservations</a>
+  </div>
   <span id="message" hidden></span>
 </body>
 

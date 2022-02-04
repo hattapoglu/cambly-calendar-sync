@@ -1,17 +1,15 @@
-const div = document.getElementById('reservation')
 const reservationList = document.getElementById('list')
 const message = document.getElementById('message')
 const loading = document.getElementById('loading')
 const getButton = document.getElementById('get')
 const downloadButton = document.getElementById('download')
 
-const hostUrl = 'www.cambly.com'
 const reservationUrl = 'https://www.cambly.com/api/reservations?language=en&cancelled=false&scrub=true'
 const scheduleUrl = 'https://www.cambly.com/en/student/schedule/'
 
 const defaults = {
   title: 'Cambly Lesson',
-  url: hostUrl,
+  url: 'www.cambly.com',
 }
 
 const errors = {
@@ -36,8 +34,6 @@ function clearErrorMessage() {
 function setLoading(bool) {
   loading.hidden = !bool
 }
-
-async function getStudentId() {}
 
 async function getReservations() {
   clearErrorMessage()

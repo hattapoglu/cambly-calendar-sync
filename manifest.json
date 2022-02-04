@@ -2,10 +2,15 @@
   "name": "Cambly Sync Calendar",
   "manifest_version": 3,
   "version": "1.0",
-  "permissions": ["cookies", "storage"],
-  "host_permissions": ["<all_urls>"],
+  "permissions": ["storage"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/16.png",
+      "32": "/images/32.png",
+      "48": "/images/48.png",
+      "128": "/images/128.png"
+    }
   },
   "content_scripts": [
     {

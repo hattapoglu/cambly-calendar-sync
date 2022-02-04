@@ -1,0 +1,16 @@
+{
+  "name": "Cambly Sync Calendar",
+  "manifest_version": 3,
+  "version": "1.0",
+  "permissions": ["cookies", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.cambly.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}

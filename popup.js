@@ -81,7 +81,7 @@ async function getKeyFromStorage(key) {
 }
 
 function transformCalendarData(result) {
-  return { start: result.startTime.$date, duration: result.minutes, id: result._id.$oid }
+  return { start: result.startTime.$date, duration: result.minutes, scheduleId: result._id?.$oid }
 }
 
 function setReservations(results) {
@@ -127,7 +127,7 @@ function formatEvent(ev) {
   let title = event.title,
     start = event.start,
     duration = event.duration,
-    url = event.url
+    url = event.scheduleId ? scheduleUrl + event.scheduleId : event.url
 
   let icsFormat = ''
   icsFormat += 'BEGIN:VEVENT\r\n'

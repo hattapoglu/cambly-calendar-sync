@@ -4,16 +4,13 @@
   "version": "1.0",
   "permissions": ["cookies", "storage"],
   "host_permissions": ["<all_urls>"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "action": {
     "default_popup": "popup.html"
   },
   "content_scripts": [
-   {
-     "matches": ["https://*.cambly.com/*"],
-     "js": ["content-script.js"]
-   }
+    {
+      "matches": ["https://*.cambly.com/*"],
+      "js": ["content-script.js"]
+    }
   ]
 }

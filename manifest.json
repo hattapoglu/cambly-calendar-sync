@@ -1,7 +1,7 @@
 {
   "name": "Cambly Sync Calendar",
   "manifest_version": 3,
-  "version": "1.0",
+  "version": "1.1",
   "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html",

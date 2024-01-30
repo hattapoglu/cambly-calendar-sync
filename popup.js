@@ -43,6 +43,7 @@ async function getReservations() {
   const studentId = await getKeyFromStorage('student_id')
 
   if (!studentId) {
+    setErrorMessage(errors.storage)
     return
   }
 
